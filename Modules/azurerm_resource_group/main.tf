@@ -5,4 +5,3 @@ resource "azurerm_resource_group" "rgs" {
   managed_by = each.value.managed_by
   tags = each.value.tags
 }
-
