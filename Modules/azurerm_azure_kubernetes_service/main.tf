@@ -45,9 +45,9 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 
   // ——— Logging ———
-#   oms_agent {
-#     log_analytics_workspace_id = each.value.log_analytics_workspace_id
-#   }
+  oms_agent {
+    log_analytics_workspace_id = each.value.log_analytics_workspace_id
+  }
 
   // ——— Tags ———
   tags = each.value.tags
